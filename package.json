@@ -1,7 +1,7 @@
 {
   "name": "scprime.js",
   "version": "0.5.0",
-  "description": "Node wrapper for siad of the Sia network",
+  "description": "Node wrapper for spd of the ScPrime network",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/420coupe/nodejs-scprime"
