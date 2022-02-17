@@ -1,23 +1,24 @@
 {
-  "name": "sia.js",
-  "version": "0.4.2",
+  "name": "scprime.js",
+  "version": "0.5.0",
   "description": "Node wrapper for siad of the Sia network",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NebulousLabs/Nodejs-Sia.git"
+    "url": "git+https://github.com/420coupe/nodejs-scprime"
   },
-  "main": "lib/sia.js",
+  "main": "lib/scprime.js",
   "scripts": {
     "build": "babel -d lib/ src/",
     "test": "npm run lint && mocha --compilers js:babel-register --recursive ./test",
     "prepublish": "npm run build",
     "lint": "eslint --max-warnings 0 ./src ./test",
-    "kill": "killall siad; while pgrep siad; do sleep .5; done;",
-    "clean": "npm run kill && rm -rf Sia node_modules"
+    "kill": "killall spd; while pgrep spd; do sleep .5; done;",
+    "clean": "npm run kill && rm -rf SCP node_modules"
   },
   "keywords": [
     "Sia",
     "Sia-UI",
+    "ScPrime",
     "Decentralized",
     "Cloud",
     "Storage",
@@ -25,9 +26,9 @@
     "Cryptocurrency"
   ],
   "bugs": {
-    "url": "https://github.com/NebulousLabs/Nodejs-Sia/issues"
+    "url": "https://github.com/420coupe/nodejs-scprime/issues"
   },
-  "author": "Nebulous Labs",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.10.1",
